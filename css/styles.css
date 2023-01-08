@@ -498,3 +498,7 @@ figure {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+.header-icons {
+    fill: var(--third-color);
+    margin-right: 10px;
+}

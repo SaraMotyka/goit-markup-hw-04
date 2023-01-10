@@ -260,15 +260,15 @@ nav {
     align-items: center;
     flex-direction: row;
 }
-.contact-items {
-    height: 16px;
-}
-
 .contact-list {
     display: flex;
     align-items: center;
     padding-left: 0;
 }
+.contact-items {
+    height: 16px;
+}
+
 .contact-list > .contact-items:not(:last-child) {
     margin-right: 50px;
 }
@@ -532,29 +532,6 @@ figure {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-.contact-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: var(--third-color);
-}
-
-.contact-links:hover,
-.contact-links:focus,
-.contact-links:active {
-    color: var(--first-color);
-}
-.header-icons {
-    --color2: currentColor;
-    fill: var(--color2);
-    margin-right: 10px;
-}
-.header-icons:hover,
-.header-icons:focus,
-.header-icons:active {
-    fill: var(--first-color);
-}
 .footer {
     display: flex;
 }
@@ -571,49 +548,14 @@ figure {
 .social-list-items:not(:last-child) {
     margin-right: 10px;
 }
-.footer-icon-item:not(:last-child) {
-    margin-right: 10px;
-}
-.icon-circle {
-    width: 44px;
-    height: 44px;
-    border-radius: 50px;
-    padding: 12px;
-}
-.icon-circle:hover,
-.icon-circle:focus,
-.icon-circle:active {
-    fill: var(--first-color);
-}
-.social-list-items:hover,
-.social-list-items:focus,
-.social-list-items:active {
-    fill: var(--fourth-color);
-}
-.social-icons:hover,
-.social-icons:focus,
-.social-icons:active {
-    fill: var(--fourth-color);
-}
-
-.footer-icon-circle {
-    width: 44px;
-    height: 44px;
-    border-radius: 50px;
-    background-color: var(--circle-color);
-    padding: 12px;
-}
-.footer-icon-circle:hover,
-.footer-icon-circle:focus,
-.footer-icon-circle:active {
-    fill: var(--first-color);
-}
-
 .footer-social-icons {
     background-position: center;
 }
 .email {
     text-decoration: underline;
+}
+.footer-icon-item:not(:last-child) {
+    margin-right: 10px;
 }
 .our-clients {
     font-family: "Roboto";
@@ -632,6 +574,65 @@ figure {
     margin: 0;
     margin-left: 215px;
 }
+.footer-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: var(--circle-color);
+    padding: 12px;
+}
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--third-color);
+}
+
+.header-icons {
+    --color2: currentColor;
+    fill: var(--color2);
+    margin-right: 10px;
+}
+.contact-links:hover,
+.contact-links:focus,
+.contact-links:active {
+    color: var(--first-color);
+}
+.social-icons {
+    fill: var(--currentColor);
+}
+.social-icons:hover,
+.social-icons:focus,
+.social-icons:active {
+    fill: var(--fourth-color);
+}
+.social-icons-link:hover,
+.social-icons-link:focus,
+.social-icons-link:active {
+    fill: var(--fourth-color);
+}
+.icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 12px;
+    background-color: var(--fourth-color);
+}
+.icon-circle:hover,
+.icon-circle:focus,
+.icon-circle:active {
+    background-color: var(--first-color);
+}
+
+.logo-client {
+    fill: var(--currentColor);
+}
+.logo-client:hover,
+.logo-client:focus,
+.logo-client:active {
+    fill: var(--first-color);
+}
+
 .clients-item {
     border: 1px solid var(--currentColor);
     border-radius: 3px;
@@ -639,5 +640,20 @@ figure {
 .clients-item:hover,
 .clients-item:focus,
 .clients-item:active {
-    fill: var(--first-color);
+    border: 1px solid var(--first-color);
+}
+.footer-icon {
+    fill: var(--fourth-color);
+}
+.footer-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 12px;
+    background-color: var(--circle-color);
+}
+.footer-icon-circle:hover,
+.footer-icon-circle:focus,
+.footer-icon-circle:active {
+    background-color: var(--first-color);
 }

@@ -18,6 +18,8 @@ body {
     --seventh-color: #212121;
     --eighth-color: #ffffff99;
     --color-shadow: #00000040;
+    --circle-color: rgba(255, 255, 255, 0.1);
+    --currentColor: #afb1b8;
 }
 
 .logo {
@@ -62,12 +64,6 @@ body {
     font-weight: 500;
     line-height: 1.14em;
     text-decoration: none;
-    color: var(--third-color);
-}
-.contact-links:hover,
-.contact-links:focus,
-.contact-links:active {
-    color: var(--first-color);
 }
 
 h1 {
@@ -330,12 +326,10 @@ figure {
     margin: 0;
     padding: 0;
     max-width: 270px;
-    max-height: 368px;
 }
 .team {
     display: flex;
     max-width: 270px;
-    min-height: 368px;
 }
 .members > .team:not(:last-child) {
     margin-right: 30px;
@@ -371,10 +365,30 @@ figure {
     width: 1600px;
     height: 252px;
     background-color: var(--fifth-color);
+}
+.footer-contact {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
+}
+.footer-contact-container {
+    display: flex;
+    margin-top: 60px;
+}
+.footer-social {
+    margin-left: 70px;
+}
+.footer-join-us {
+    color: var(--fourth-color);
+    text-transform: uppercase;
+    margin-top: 72px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 3%;
+}
+.footer-icon-list {
+    display: flex;
 }
 .logo-footer {
     margin-right: auto;
@@ -390,9 +404,7 @@ figure {
 .footer-box > .details:first-child {
     margin-top: 20px;
 }
-.mail {
-    text-decoration: underline;
-}
+
 .buttons {
     margin-bottom: 34px;
     padding: 0;
@@ -507,14 +519,7 @@ figure {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.header-icons {
-    margin-right: 10px;
-}
-.header-icons:hover,
-.header-icons:focus,
-.header-icons:active {
-    fill: var(--first-color);
-}
+
 .cards:hover,
 .cards:focus,
 .cards:active {
@@ -527,10 +532,28 @@ figure {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .contact-links {
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: var(--third-color);
+}
+
+.contact-links:hover,
+.contact-links:focus,
+.contact-links:active {
+    color: var(--first-color);
+}
+.header-icons {
+    --color2: currentColor;
+    fill: var(--color2);
+    margin-right: 10px;
+}
+.header-icons:hover,
+.header-icons:focus,
+.header-icons:active {
+    fill: var(--first-color);
 }
 .footer {
     display: flex;
@@ -539,22 +562,82 @@ figure {
     display: flex;
     flex-direction: row;
 }
-.join-us {
-    height: 16px;
-    font-family: "Roboto";
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1em;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
 .social-list {
     display: flex;
 }
 .social-list-items {
     margin-top: 16px;
-    margin-bottom: 18px;
-    margin-left: 32px;
-    list-style: none;
+}
+.social-list-items:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-icon-item:not(:last-child) {
+    margin-right: 10px;
+}
+.icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    padding: 12px;
+}
+.icon-circle:hover,
+.icon-circle:focus,
+.icon-circle:active {
+    fill: var(--first-color);
+}
+.social-list-items:hover,
+.social-list-items:focus,
+.social-list-items:active {
+    fill: var(--fourth-color);
+}
+.social-icons:hover,
+.social-icons:focus,
+.social-icons:active {
+    fill: var(--fourth-color);
+}
+
+.footer-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: var(--circle-color);
+    padding: 12px;
+}
+.footer-icon-circle:hover,
+.footer-icon-circle:focus,
+.footer-icon-circle:active {
+    fill: var(--first-color);
+}
+
+.footer-social-icons {
+    background-position: center;
+}
+.email {
+    text-decoration: underline;
+}
+.our-clients {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--second-color);
+    margin-bottom: 50px;
+    margin-left: 410px;
+}
+.clients-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    margin: 0;
+    margin-left: 215px;
+}
+.clients-item {
+    border: 1px solid var(--currentColor);
+    border-radius: 3px;
+}
+.clients-item:hover,
+.clients-item:focus,
+.clients-item:active {
+    fill: var(--first-color);
 }

@@ -623,6 +623,11 @@ figure {
 .icon-circle:active {
     background-color: var(--first-color);
 }
+.icon-circle:hover > svg,
+.icon-circle:focus > svg,
+.icon-circle:active > svg {
+    fill: var(--fourth-color);
+}
 
 .logo-client {
     fill: var(--currentColor);
@@ -632,7 +637,6 @@ figure {
 .logo-client:active {
     fill: var(--first-color);
 }
-
 .clients-item {
     border: 1px solid var(--currentColor);
     border-radius: 3px;
@@ -641,6 +645,14 @@ figure {
 .clients-item:focus,
 .clients-item:active {
     border: 1px solid var(--first-color);
+}
+.clients-item {
+    fill: var(--currentColor);
+}
+.clients-item:hover .clients-icon,
+.clients-item:focus .clients-icon,
+.clients-item:active .clients-item {
+    fill: var(--first-color);
 }
 .footer-icon {
     fill: var(--fourth-color);
